@@ -5,6 +5,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>gc', builtin.git_commits, {})
---vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>r', builtin.registers, {})
 
 pcall(require('telescope').load_extension, 'fzf')
