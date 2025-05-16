@@ -178,6 +178,14 @@ require("lazy").setup({
       },
   },
 
+  {
+    "glebzlat/arduino-nvim",
+    config = {
+      function() require("arduino-nvim").setup() end,
+      filetype = "arduino",
+    }
+  },
+
   "ThePrimeagen/vim-be-good",
 
 })

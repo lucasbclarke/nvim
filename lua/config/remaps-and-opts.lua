@@ -33,4 +33,9 @@ vim.keymap.set({"n", "v"}, "p", [["+p]])
 vim.keymap.set("n", "P", [["+P]])
 
 vim.keymap.set("n", "<Leader>vbg", ":VimBeGood<Enter>")
+
+vim.keymap.set("n", "<C-;>", "<C-x>")
+vim.keymap.set("n", "<C-[>", "<C-a>")
 vim.g.zig_fmt_autosave = 0
+
+vim.keymap.set("n", "<Leader>n", ":noh<Enter>")
