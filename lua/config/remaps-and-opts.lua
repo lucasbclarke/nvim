@@ -7,7 +7,7 @@ vim.opt.relativenumber = true
 vim.opt.scrolloff = 23
 vim.opt.statusline = "%f %=%c,%l"
 
-vim.keymap.set("n", "<Leader>dl", vim.cmd.Ex)
+vim.keymap.set("n", "<Leader>dl", ":Sex!<Enter>")
 vim.keymap.set("n", "<Leader>pl", vim.cmd.Lazy)
 vim.keymap.set("n", "<Leader>ls", vim.cmd.Mason)
 
