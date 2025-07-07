@@ -1,12 +1,13 @@
 local servers = {
   zls = {},
+  nil_ls = {},
 
-  lua_ls = {
-    Lua = {
-      workspace = { checkThirdParty = false },
-      telemetry = { enable = false },
-    },
-  },
+  --lua_ls = {
+  --  Lua = {
+  --    workspace = { checkThirdParty = false },
+  --    telemetry = { enable = false },
+  --  },
+  --},
 }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()

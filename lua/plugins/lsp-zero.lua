@@ -18,3 +18,22 @@ lsp_zero.extend_lspconfig({
 	lsp_attach = lsp_attach,
 	capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
+
+-- Configure Lua LS separately to use your custom command
+require('lspconfig').lua_ls.setup({
+    mason = false,  -- Disable Mason management
+    cmd = { "lua-language-server" },  -- Use your NixOS version
+    settings = {
+        Lua = {
+            workspace = {
+                checkThirdParty = false,
+            },
+            telemetry = {
+                enable = false,
+            },
+            diagnostics = {
+                globals = { "vim" },
+            },
+        },
+    }
+})

@@ -2,24 +2,10 @@
 require("mason").setup()
 
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "zls" },
-    automatic_installation = false,   -- explicitly disable
+    ensure_installed = { "zls", "nil_ls" },  -- Only ZLS, not lua_ls
+    automatic_installation = false,
     automatic_enable = false,    
 })
 
-local lspconfig = require("lspconfig")
-
--- Setup for ZLS (Zig LSP)
-lspconfig.zls.setup({})
-
--- Setup for Lua LS (recommended extras for neovim development)
-lspconfig.lua_ls.setup({
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { "vim" },
-            },
-        },
-    },
-})
-
+-- Remove all the Lua LS configuration from here
+-- It should be configured in a separate file or in lsp-zero setup
