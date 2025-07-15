@@ -1,5 +1,5 @@
 local servers = {
-  zls = {},
+  --zls = {},
   nil_ls = {},
 
   --lua_ls = {

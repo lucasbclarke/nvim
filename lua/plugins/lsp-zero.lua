@@ -37,3 +37,9 @@ require('lspconfig').lua_ls.setup({
         },
     }
 })
+
+
+require('lspconfig').zls.setup({
+    mason = false,  -- Disable Mason management
+    cmd = { "zls" },  -- Use your NixOS version
+})
