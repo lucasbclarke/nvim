@@ -180,6 +180,8 @@ require("lazy").setup({
 
   "ThePrimeagen/vim-be-good",
 
+  "p00f/clangd_extensions.nvim",
+
 })
 
 require("time-tracker").setup({

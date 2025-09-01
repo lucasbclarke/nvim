@@ -48,3 +48,8 @@ require('lspconfig').zls.setup({
 	}
     }
 })
+
+require('lspconfig').clangd.setup({
+    mason = false,
+    cmd = { "clangd" },
+})
